@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./normalize.css" rel="stylesheet">
+    <title>Sepideh Dolatshahi</title>
+</head>
+
+<body class="nospace">
+    <header class="border">
+        <ul>
+            <li class="logo">
+                <img src="./logo.png" alt="logo" title="SShop">
+            </li>
+            <li>
+                <a href="#" class="active">Info</a>
+            </li>
+            <li>
+                <a href="./reflection.html">Reflection</a>
+            </li>
+            <li>
+                <a href="./honesty.html" >Honesty</a>
+            </li>
+        </ul>
+        <h2>SShop</h2>
+    </header>
+    <main class="info-main border">
+        <div class="info-text">
+            <h1>User Information</h1>
+            <form name="signup" action="https://httpbin.org/post" method="post" onsubmit="return validateForm()" onreset="return validateForm(true)" class="info-form">
+                <div class="form-row nospace">
+                    <div class="form-row-column">
+                        <label for="firstName">First name (start with a cap and only alphabet):</label><br>
+                        <input required type="text" id="firstName" name="firstName" ><br>
+                        <label  class="error" id="firstName-err"></label>
+                    </div>
+                    <div class="form-row-column">
+                        <label for="lastname">Last name (start with a cap and only alphabet):</label><br>
+                        <input required type="text" id="lastname" name="lastname"><br>
+                        <label  class="error" id="lastName-err"></label>
+                    </div>
+                </div>
+                <div class="form-row nospace">
+                    <div class="form-row-column">
+                        <label for="email">Email(currect email fomat):</label><br>
+                        <input type="email" id="email" name="email"><br>
+                    </div>
+                    <div class="form-row-column">
+                        <label for="age">Age (18-90):</label><br>
+                        <input type="number" min="18" max="90" id="age" name="age"><br>
+                        <label  class="error" id="age-err"></label>
+                    </div>
+                </div>
+                <div class="form-row nospace">
+                    <div class="form-row-column">
+                        <label for="userName">User name (start with an alphabet,at least 6 
+                            characters, Pattern attribute is not allowed):</label><br>
+                        <input required type="text" id="userName" name="userName"><br>
+                        <label  class="error" id="username-err"></label>
+                    </div>
+                </div>
+                <div class="form-row nospace">
+                    <div class="form-row-column">
+                        <label for="password">Password ( at least 6 characters long,start with an alphabet, 
+                            at least 1 digit and 1 uppercase):</label><br>
+                        <input required type="password" id="password" name="password"><br>
+                        <label  class="error" id="pass-err"></label>
+                    </div>
+                    <div class="form-row-column">
+                        <label for="repassword">RePassword (similar password):</label><br>
+                        <input required type="password" id="repassword" name="repassword"><br>
+                        <label  class="error" id="repass-err"></label>
+                    </div>
+                </div>
+                <div class="form-row nospace">
+                    <p>Education Status : </p>
+                    <div class="form-row-check">
+                        <label for="graduated">Graduated</label><br>
+                        <input required type="radio" id="graduated" name="education" value="Graduated">
+                    </div>
+                    <div class="form-row-check">
+                        <label for="currentEnrolled">Current enrolled</label><br>
+                        <input required type="radio" id="currentEnrolled" name="education" value="Current enrolled">
+                    </div>
+                    <div class="form-row-check">
+                        <label for="didNotGraduate">Did not graduate</label>
+                        <input required type="radio" id="didNotGraduate" name="education" value="Did not graduate">
+                    </div>
+                </div>
+                <input type="hidden" name="Dolatshahi" id="Dolatshahi" value="Dolatshahi" />
+                <input type="hidden" name="115539215" id="115539215" value="115539215" />
+                <div class="form-buttons">
+                    <button type="submit" class="submit-button">Submit</button>
+                    <button type="reset" class="reset-button">Reset</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="border">
+        <p style="text-align: center;">All Rights Reserver By S &copy;2020-2021.<br /><a href="https://github.com/sepidehdolatshahi/web222" target="_blank" rel="noopener">public GitHub link</a></p>
+		
+    </footer>
+    <script src="./info.js"></script>
+</body>
+
+</html>
